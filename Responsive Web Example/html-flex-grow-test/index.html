@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.parent {
+				display: flex;
+				flex-direction: row;
+				border: thin solid orange;
+				margin: 5px;
+				padding: 5px;
+			}
+
+			.child {
+				display: flex;
+				width: 25%;
+				flex-grow: 1;
+			}
+
+			.child.blue {
+				background: blue;
+			}
+
+			.child.red {
+				background: red;
+			}
+
+			.child.yellow {
+				background: yellow;
+			}
+
+			.child.green {
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child green">
+				<p>Green Child</p>
+			</div>
+			<div class="child blue">
+				<p>Blue Child</p>
+				<p>this is some content</p>
+				<p>this is some content</p>
+				<p>this is some content</p>
+				<p>this is some content</p>
+			</div>
+			<div class="child red">
+				<p>this is some content</p>
+				<p>this is some content</p>
+				<p>this is some content</p>
+			</div>
+			<div class="child yellow">
+				<p>this is some content</p>
+				<p>this is some content</p>
+			</div>
+		</div>
+	</body>
+</html>
